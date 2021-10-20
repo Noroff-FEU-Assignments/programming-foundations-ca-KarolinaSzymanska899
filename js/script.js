@@ -61,3 +61,5 @@ var games = [
     rating: 2.9,
   },
 ];
+
+function showGames(games) {}
