@@ -64,11 +64,14 @@ var games = [
 
 function showGames(games) {
   var gameContainer = document.querySelector("ul");
+  gameContainer.innerHTML = "";
 
   for (var i = 0; i < games.length; i++) {
-    if (games[i].rating < 3.5) {
-      gameContainer.innerHTML +=
-        "<li>" + games[i].title + ": " + games[i].rating + "</li>";
+    var rating = games[i].rating;
+    var title = games[i].title;
+
+    if (rating < 3.5) {
+      gameContainer.innerHTML += "<li>" + title + ": " + rating + "</li>";
     }
   }
 }
