@@ -93,4 +93,14 @@ function showGames(games) {
 // Boolean
 // Null
 
-function whatIDontLike(dislikedThing) {}
+function whatIDontLike(dislikedThing) {
+  var typeOfDislikedThing = typeof dislikedThing;
+
+  if (typeOfDislikedThing === "string") {
+    console.log("I don't like " + dislikedThing[i]);
+  } else {
+    console.log("Please send in a string");
+  }
+}
+
+whatIDontLike("waking up early");
