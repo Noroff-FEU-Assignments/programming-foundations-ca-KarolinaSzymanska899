@@ -97,10 +97,10 @@ function whatIDontLike(dislikedThing) {
   var typeOfDislikedThing = typeof dislikedThing;
 
   if (typeOfDislikedThing === "string") {
-    console.log("I don't like " + dislikedThing[i]);
+    console.log("I don't like " + dislikedThing);
   } else {
     console.log("Please send in a string");
   }
 }
 
-whatIDontLike("waking up early");
+whatIDontLike("brussels sprout");
