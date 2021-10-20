@@ -62,4 +62,13 @@ var games = [
   },
 ];
 
-function showGames(games) {}
+function showGames(games) {
+  var gameContainer = document.querySelector("ul");
+
+  for (var i = 0; i < games.length; i++) {
+    if (games[i].rating < 3.5) {
+      gameContainer +=
+        "<li>" + games[i].title + ": " + games[i].rating + "</li>";
+    }
+  }
+}
