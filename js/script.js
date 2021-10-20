@@ -75,3 +75,20 @@ function showGames(games) {
     }
   }
 }
+
+// question 4
+// Create a function called whatIDontLike that accepts one argument.
+// Choose a good name for the argument.
+// Inside the function, check if the argument has a string value.
+// If it doesn't log the message "Please send in a string".
+// If the argument is a string value, log the message:
+// "I don't like " together with the argument.
+// Call the function and pass in a value of your choice.
+// Example:
+// If you pass in the value "giraffes", the function should log: "I don't like giraffes".
+
+// Test your function by calling it with a value of each of these types:
+// String
+// Number
+// Boolean
+// Null
