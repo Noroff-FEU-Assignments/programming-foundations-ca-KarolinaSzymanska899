@@ -92,3 +92,5 @@ function showGames(games) {
 // Number
 // Boolean
 // Null
+
+var whatIDontLike (dislikedThing);
