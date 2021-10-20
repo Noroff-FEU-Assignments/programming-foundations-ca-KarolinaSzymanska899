@@ -23,3 +23,41 @@ for (var i = 15; i <= 25; i++) {
     console.log(i);
   }
 }
+
+// question 3
+// You are creating an online game comparison website.
+// When provided with a list of games, these should be displayed to the user.
+
+// Loop through the array below and add an li item to the ul element in the HTML
+// containing the title and rating of each game only if the rating for the game is below 3.5.
+// If a game is unrated, exclude it from the list.
+
+/* The ul element should look similar to this after your code executes:
+<ul>
+ <li>Name of game: rating</li>
+ <li>Name of game: rating</li>
+</ul>
+*/
+
+var games = [
+  {
+    title: "Grand Theft Auto",
+    rating: 4.48,
+  },
+  {
+    title: "Portal 2",
+    rating: 3.5,
+  },
+  {
+    title: "Team Fortress",
+    rating: null,
+  },
+  {
+    title: "The Witcher",
+    rating: 3.0,
+  },
+  {
+    title: "The Elder Scrolls",
+    rating: 2.9,
+  },
+];
