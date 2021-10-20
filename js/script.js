@@ -67,7 +67,7 @@ function showGames(games) {
 
   for (var i = 0; i < games.length; i++) {
     if (games[i].rating < 3.5) {
-      gameContainer +=
+      gameContainer.innerHTML +=
         "<li>" + games[i].title + ": " + games[i].rating + "</li>";
     }
   }
