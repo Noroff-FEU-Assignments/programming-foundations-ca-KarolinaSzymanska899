@@ -104,3 +104,6 @@ function whatIDontLike(dislikedThing) {
 }
 
 whatIDontLike("brussels sprout");
+whatIDontLike(25);
+whatIDontLike(true);
+whatIDontLike(null);
