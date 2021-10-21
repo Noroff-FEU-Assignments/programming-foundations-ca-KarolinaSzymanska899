@@ -133,3 +133,5 @@ function subtraction(number1, number2) {
     console.log("Invalid argument(s)");
   }
 }
+
+subtraction(5, 20);
