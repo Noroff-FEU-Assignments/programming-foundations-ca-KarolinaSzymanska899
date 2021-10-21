@@ -154,7 +154,7 @@ subtraction("Ten", "One Hundred");
 subtraction(null, 123);
 
 // question 6
-// Select the button with the class page.
+// +Select the button with the class page.
 // When the button is clicked do the following:
 // Change the title of the page (the value of the title element in the head) to "Updated title".
 // Change the background colour of the whole page to "yellow".
@@ -165,9 +165,9 @@ subtraction(null, 123);
 // The h1 element should look like this after the click event:
 // <h1><a href="#">Programming Foundations Course Assignment</a></h1>
 
-var button = document.innerHTML(".page");
-var heading = document.innerHTML("h1");
-var list = document.innerHTML("ul");
+var button = document.querySelector(".page");
+var heading = document.querySelector("h1");
+var list = document.querySelector("ul");
 
 button.onclick = function pageStyleUpdate() {
   document.title = "Updated title";
@@ -203,3 +203,4 @@ var toys = [
     price: 89.99,
   },
 ];
+ew;
