@@ -175,7 +175,8 @@ button.onclick = function pageStyleUpdate() {
   heading.style.color = "green";
   heading.style.font = "impact";
   heading.innerHTML = "";
-  heading.innerHTML += "<a href=#>" + "Programming Foundations" + "</a>";
+  heading.innerHTML +=
+    "<a href=#>" + "Programming Foundations Course Assignment" + "</a>";
   list.style.listStyleType = "none";
   list.style.padding = "0";
 };
