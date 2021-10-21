@@ -172,6 +172,10 @@ var list = document.innerHTML("ul");
 button.onclick = function pageStyleUpdate() {
   document.title = "Updated title";
   document.body.style.backgroundColor = "yellow";
-  h1.style.color = "green";
-  h1.style.font = "impact";
+  heading.style.color = "green";
+  heading.style.font = "impact";
+  heading.innerHTML = "";
+  heading.innerHTML += "<a href=#>" + "Programming Foundations" + "</a>";
+  list.style.listStyleType = "none";
+  list.style.padding = "0";
 };
