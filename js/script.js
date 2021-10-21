@@ -152,3 +152,15 @@ subtraction(10, "50");
 subtraction("100", "400");
 subtraction("Ten", "One Hundred");
 subtraction(null, 123);
+
+// question 6
+// Select the button with the class page.
+// When the button is clicked do the following:
+// Change the title of the page (the value of the title element in the head) to "Updated title".
+// Change the background colour of the whole page to "yellow".
+// Change the color of the h1 element to "green".
+// Change the h1 element's font to "impact".
+// Change the value of the h1 element to be a link.
+// Remove the list style and padding from the ul element.
+// The h1 element should look like this after the click event:
+// <h1><a href="#">Programming Foundations Course Assignment</a></h1>
