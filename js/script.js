@@ -164,3 +164,7 @@ subtraction(null, 123);
 // Remove the list style and padding from the ul element.
 // The h1 element should look like this after the click event:
 // <h1><a href="#">Programming Foundations Course Assignment</a></h1>
+
+var button = document.innerHTML(".page");
+
+button.onclick = function pageStyleUpdate() {};
