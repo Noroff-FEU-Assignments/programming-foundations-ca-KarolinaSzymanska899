@@ -166,5 +166,7 @@ subtraction(null, 123);
 // <h1><a href="#">Programming Foundations Course Assignment</a></h1>
 
 var button = document.innerHTML(".page");
+var heading = document.innerHTML("h1");
+var list = document.innerHTML("ul");
 
 button.onclick = function pageStyleUpdate() {};
