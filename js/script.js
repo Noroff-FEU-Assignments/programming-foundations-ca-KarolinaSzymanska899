@@ -126,4 +126,10 @@ whatIDontLike(null);
 function subtraction(number1, number2) {
   var convertedNumber1 = parseFloat(number1);
   var convertedNumber2 = parseFloat(number2);
+
+  if (convertedNumber1 === number || convertedNumber2 === number) {
+    convertedNumber1 - convertedNumber2;
+  } else {
+    console.log("Invalid argument(s)");
+  }
 }
