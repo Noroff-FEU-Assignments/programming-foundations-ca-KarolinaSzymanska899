@@ -126,14 +126,22 @@ whatIDontLike(null);
 function subtraction(number1, number2) {
   var result = 0;
   var div = document.querySelector("#subtraction");
+  div.innerHTML = "";
 
   var convertedNumber1 = parseFloat(number1);
   var convertedNumber2 = parseFloat(number2);
 
-  if (convertedNumber1 === "number" && convertedNumber2 === "number") {
-    convertedNumber1 - convertedNumber2;
+  if (
+    typeof convertedNumber1 !== "number" ||
+    typeof convertedNumber2 !== "number"
+  ) {
+    result = "Invalid argument(s)";
+    div.innerHTML = result;
+    return result;
   } else {
-    console.log("Invalid argument(s)");
+    result = convertedNumber1 - convertedNumber2;
+    div.innerHTML = result;
+    return result;
   }
 }
 
