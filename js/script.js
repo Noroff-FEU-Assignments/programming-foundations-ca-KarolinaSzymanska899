@@ -124,10 +124,13 @@ whatIDontLike(null);
 // (10, "50"), ("100", "400"), ("Ten", "One Hundred"), (null, 123);
 
 function subtraction(number1, number2) {
+  var result = 0;
+  var div = document.querySelector("#subtraction");
+
   var convertedNumber1 = parseFloat(number1);
   var convertedNumber2 = parseFloat(number2);
 
-  if (convertedNumber1 === number && convertedNumber2 === number) {
+  if (convertedNumber1 === "number" && convertedNumber2 === "number") {
     convertedNumber1 - convertedNumber2;
   } else {
     console.log("Invalid argument(s)");
