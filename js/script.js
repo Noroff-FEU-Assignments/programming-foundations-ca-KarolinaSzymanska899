@@ -165,15 +165,15 @@ subtraction(null, 123);
 // The h1 element should look like this after the click event:
 // <h1><a href="#">Programming Foundations Course Assignment</a></h1>
 
-var button = document.querySelector(".page");
+var buttonPage = document.querySelector(".page");
 var heading = document.querySelector("h1");
 var list = document.querySelector("ul");
 
-button.onclick = function pageStyleUpdate() {
+buttonPage.onclick = function pageStyleUpdate() {
   document.title = "Updated title";
   document.body.style.backgroundColor = "yellow";
   heading.style.color = "green";
-  heading.style.font = "impact";
+  heading.style.fontFamily = "impact";
   heading.innerHTML = "";
   heading.innerHTML +=
     "<a href=#>" + "Programming Foundations Course Assignment" + "</a>";
