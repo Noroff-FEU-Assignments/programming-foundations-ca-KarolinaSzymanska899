@@ -169,4 +169,9 @@ var button = document.innerHTML(".page");
 var heading = document.innerHTML("h1");
 var list = document.innerHTML("ul");
 
-button.onclick = function pageStyleUpdate() {};
+button.onclick = function pageStyleUpdate() {
+  document.title = "Updated title";
+  document.body.style.backgroundColor = "yellow";
+  h1.style.color = "green";
+  h1.style.font = "impact";
+};
