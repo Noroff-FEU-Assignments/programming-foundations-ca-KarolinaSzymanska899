@@ -179,3 +179,27 @@ button.onclick = function pageStyleUpdate() {
   list.style.listStyleType = "none";
   list.style.padding = "0";
 };
+
+// question 7
+// Select the button with the class price.
+// When the button is clicked, loop through the array below, add all the prices
+// and assign the total to be the innerHTML value of the element with the id total:
+
+var toys = [
+  {
+    name: "Lego",
+    price: 15.6,
+  },
+  {
+    name: "Master of the Universe",
+    price: "28.3",
+  },
+  {
+    name: "Barbie",
+    price: null,
+  },
+  {
+    name: "Mr Potato Head",
+    price: 89.99,
+  },
+];
