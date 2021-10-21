@@ -127,7 +127,7 @@ function subtraction(number1, number2) {
   var convertedNumber1 = parseFloat(number1);
   var convertedNumber2 = parseFloat(number2);
 
-  if (convertedNumber1 === number || convertedNumber2 === number) {
+  if (convertedNumber1 === number && convertedNumber2 === number) {
     convertedNumber1 - convertedNumber2;
   } else {
     console.log("Invalid argument(s)");
@@ -135,3 +135,9 @@ function subtraction(number1, number2) {
 }
 
 subtraction(5, 20);
+subtraction(1, 42);
+subtraction(200, 150);
+subtraction(10, "50");
+subtraction("100", "400");
+subtraction("Ten", "One Hundred");
+subtraction(null, 123);
