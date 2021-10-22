@@ -199,5 +199,13 @@ var buttonCalculatePrice = document.querySelector(".price");
 
 buttonCalculatePrice.onclick = function () {
   var theTotal = 0;
-  for (var i = 0; i < toys.length; i++) {}
+  for (var i = 0; i < toys.length; i++) {
+    if (isNaN(toys[i].price)) {
+      continue;
+    } else {
+      theTotal = +toys[i].price;
+    }
+  }
+  var total = document.querySelector("#total");
+  total.innerHTML = theTotal;
 };
