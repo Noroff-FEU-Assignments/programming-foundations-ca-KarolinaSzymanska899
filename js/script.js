@@ -123,35 +123,28 @@ whatIDontLike(null);
 // Test your function with the following value pairs: (1, 42), (200, 150),
 // (10, "50"), ("100", "400"), ("Ten", "One Hundred"), (null, 123);
 
-function subtraction(number1, number2) {
-  var result = 0;
-  var div = document.querySelector("#subtraction");
-  div.innerHTML = "";
+/* function subtraction(number1, number2) {
+  var container = document.querySelector("#subtraction");
+  var result = container.innerHTML;
+  var convertedNumer1 = parseFloat(number1);
+  var convertedNumer2 = parseFloat(number2);
 
-  var convertedNumber1 = parseFloat(number1);
-  var convertedNumber2 = parseFloat(number2);
+  var typeOfConvertedNumber1 = typeof convertedNumer1;
+  var typeOfConvertedNumber2 = typeof convertedNumer2;
 
   if (
-    typeof convertedNumber1 !== "number" ||
-    typeof convertedNumber2 !== "number"
+    typeOfConvertedNumber1 === "number" &&
+    typeOfConvertedNumber2 === "number"
   ) {
-    result = "Invalid argument(s)";
-    div.innerHTML = result;
     return result;
   } else {
-    result = convertedNumber1 - convertedNumber2;
-    div.innerHTML = result;
+    result = "Invalid argument(s)";
     return result;
   }
 }
 
-subtraction(5, 20);
-subtraction(1, 42);
-subtraction(200, 150);
-subtraction(10, "50");
-subtraction("100", "400");
-subtraction("Ten", "One Hundred");
-subtraction(null, 123);
+subtraction(1, 5);
+*/
 
 // question 6
 // +Select the button with the class page.
