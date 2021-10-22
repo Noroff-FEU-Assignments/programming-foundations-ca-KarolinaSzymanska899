@@ -127,20 +127,24 @@ function subtraction(number1, number2) {
   var convertedNumber1 = parseFloat(number1);
   var convertedNumber2 = parseFloat(number2);
 
-  if (isNaN(convertedNumber1) || isNaN(convertedNumber2)) {
+  var result = 0;
+  var container = document.querySelector("#subtraction");
+  container.innerHTML = "";
+
+  if (
+    typeof convertedNumber1 !== "number" ||
+    typeof convertedNumber2 !== "number"
+  ) {
     return "Invalid argument(s)";
   } else {
-    var result = convertedNumber1 - convertedNumber2;
+    result = convertedNumber1 - convertedNumber2;
+    container.innerHTML = result;
     return result;
   }
 }
 
-var container = document.querySelector("#subtraction");
-var result = container.innerHTML;
-subtraction(1, 5);
-
 // question 6
-// +Select the button with the class page.
+// Select the button with the class page.
 // When the button is clicked do the following:
 // Change the title of the page (the value of the title element in the head) to "Updated title".
 // Change the background colour of the whole page to "yellow".
@@ -190,4 +194,10 @@ var toys = [
     price: 89.99,
   },
 ];
-ew;
+
+var buttonCalculatePrice = document.querySelector(".price");
+
+buttonCalculatePrice.onclick = function () {
+  var theTotal = 0;
+  for (var i = 0; i < toys.length; i++) {}
+};
