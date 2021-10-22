@@ -108,7 +108,7 @@ whatIDontLike(25);
 whatIDontLike(true);
 whatIDontLike(null);
 
-// question 5 NOT WORKING
+// question 5
 // Create a function that accepts two arguments.
 // Inside the function, try to convert the arguments to numbers.
 
@@ -123,28 +123,21 @@ whatIDontLike(null);
 // Test your function with the following value pairs: (1, 42), (200, 150),
 // (10, "50"), ("100", "400"), ("Ten", "One Hundred"), (null, 123);
 
-/* function subtraction(number1, number2) {
-  var container = document.querySelector("#subtraction");
-  var result = container.innerHTML;
-  var convertedNumer1 = parseFloat(number1);
-  var convertedNumer2 = parseFloat(number2);
+function subtraction(number1, number2) {
+  var convertedNumber1 = parseFloat(number1);
+  var convertedNumber2 = parseFloat(number2);
 
-  var typeOfConvertedNumber1 = typeof convertedNumer1;
-  var typeOfConvertedNumber2 = typeof convertedNumer2;
-
-  if (
-    typeOfConvertedNumber1 === "number" &&
-    typeOfConvertedNumber2 === "number"
-  ) {
-    return result;
+  if (isNaN(convertedNumber1) || isNaN(convertedNumber2)) {
+    return "Invalid argument(s)";
   } else {
-    result = "Invalid argument(s)";
+    var result = convertedNumber1 - convertedNumber2;
     return result;
   }
 }
 
+var container = document.querySelector("#subtraction");
+var result = container.innerHTML;
 subtraction(1, 5);
-*/
 
 // question 6
 // +Select the button with the class page.
