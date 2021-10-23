@@ -137,11 +137,12 @@ var toys = [
 ];
 
 var buttonCalculatePrice = document.querySelector(".price");
+var price = toys[i].price;
+var convertedPrice = parseFloat(price);
 
 buttonCalculatePrice.onclick = function () {
-  var price = toys[i].price;
-  var convertedPrice = parseFloat(price);
   var theTotal = 0;
+
   for (var i = 0; i < toys.length; i++) {
     if (isNaN(convertedPrice)) {
       continue;
