@@ -198,12 +198,14 @@ var toys = [
 var buttonCalculatePrice = document.querySelector(".price");
 
 buttonCalculatePrice.onclick = function () {
+  var price = toys[i].price;
+  var convertedPrice = parseFloat(price);
   var theTotal = 0;
   for (var i = 0; i < toys.length; i++) {
-    if (isNaN(toys[i].price)) {
+    if (isNaN(convertedPrice)) {
       continue;
     } else {
-      theTotal = +toys[i].price;
+      theTotal = +convertedPrice;
     }
   }
 
