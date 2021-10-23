@@ -206,6 +206,7 @@ buttonCalculatePrice.onclick = function () {
       theTotal = +toys[i].price;
     }
   }
+
   var total = document.querySelector("#total");
   total.innerHTML = theTotal;
 };
