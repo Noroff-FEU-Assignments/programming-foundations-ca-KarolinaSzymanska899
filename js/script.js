@@ -136,6 +136,20 @@ var toys = [
   },
 ];
 
+/*
+PATTERN
+
+const array = [1, 2, 3, 4];
+let sum = 0;
+
+for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+}
+console.log(sum);
+*/
+
+/*
+MY OLD SOLUTION
 var buttonCalculatePrice = document.querySelector(".price");
 var price = toys[i].price;
 var convertedPrice = parseFloat(price);
@@ -154,3 +168,21 @@ buttonCalculatePrice.onclick = function () {
   var total = document.querySelector("#total");
   total.innerHTML = theTotal;
 };
+*/
+
+var buttonCalculatePrice = document.querySelector(".price");
+var total = 0;
+
+buttonCalculatePrice.onclick = function calculatePrice() {
+  for (var i = 0; i < toys.length; i++) {
+    var price = parseFloat(toys[i].price);
+    if (isNaN(price)) {
+      continue;
+    } else {
+      total = total + price;
+    }
+  }
+  console.log(total);
+};
+
+calculatePrice();
