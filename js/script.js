@@ -136,6 +136,25 @@ var toys = [
   },
 ];
 
+/*
+// india:
+var buttonCalculatePrice = document.querySelector(".price");
+
+buttonCalculatePrice.onclick = function () {
+  var theTotal = 0;
+  for (i = 0; i < toys.length; i++) {
+    if (toys[i].price == null) {
+      consnole.log(toys[i].price);
+    } else {
+      theTotal += +toys[i].price;
+    }
+  }
+  var total = document.querySelector("#total");
+  total.innerHTML = "Total price of all the toys: " + theTotal;
+};
+*/
+
+/* works a bit:
 var buttonCalculatePrice = document.querySelector(".price");
 var total = 0;
 
@@ -151,4 +170,23 @@ buttonCalculatePrice.onclick = function calculatePrice() {
   var total = document.querySelector("#total");
   total.innerHTML = total;
   console.log(total);
+};
+*/
+
+// my once again:
+var buttonCalculatePrice = document.querySelector(".price");
+
+buttonCalculatePrice.onclick = function calculatePrice() {
+  var total = 0;
+  for (var i = 0; i < toys.length; i++) {
+    var price = parseFloat(toys[i].price);
+    if (isNaN(price)) {
+      continue;
+    } else {
+      total += price;
+    }
+  }
+  var total = document.querySelector("#total");
+  total.innerHTML = total;
+  return total;
 };
