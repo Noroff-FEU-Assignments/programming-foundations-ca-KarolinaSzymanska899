@@ -154,6 +154,24 @@ buttonCalculatePrice.onclick = function () {
 };
 */
 
+// my once once again :D
+var buttonCalculatePrice = document.querySelector(".price");
+
+buttonCalculatePrice.onclick = function calculatePrice() {
+  var theTotal = 0;
+  for (var i = 0; i < toys.length; i++) {
+    var price = parseFloat(toys[i].price);
+    if (isNaN(price)) {
+      continue;
+    } else {
+      theTotal += price;
+    }
+  }
+  var total = document.querySelector("#total");
+  total.innerHTML = theTotal;
+  console.log(total);
+};
+
 /* works a bit:
 var buttonCalculatePrice = document.querySelector(".price");
 var total = 0;
@@ -173,6 +191,7 @@ buttonCalculatePrice.onclick = function calculatePrice() {
 };
 */
 
+/*
 // my once again:
 var buttonCalculatePrice = document.querySelector(".price");
 
@@ -188,5 +207,6 @@ buttonCalculatePrice.onclick = function calculatePrice() {
   }
   var total = document.querySelector("#total");
   total.innerHTML = total;
-  return total;
+  console.log(total);
 };
+*/
