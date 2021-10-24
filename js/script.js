@@ -148,28 +148,28 @@ for (let i = 0; i < array.length; i++) {
 console.log(sum);
 */
 
-/*
-MY OLD SOLUTION
+// MY OLD SOLUTION
 var buttonCalculatePrice = document.querySelector(".price");
-var price = toys[i].price;
-var convertedPrice = parseFloat(price);
+var price = pardeFloat(toys[i].price);
 
-buttonCalculatePrice.onclick = function () {
+buttonCalculatePrice.onclick = function calculatePrice() {
   var theTotal = 0;
 
   for (var i = 0; i < toys.length; i++) {
-    if (isNaN(convertedPrice)) {
+    if (isNaN(price)) {
       continue;
     } else {
-      theTotal = +convertedPrice;
+      theTotal = theTotal + price;
     }
+    calculatePrice();
   }
 
   var total = document.querySelector("#total");
   total.innerHTML = theTotal;
 };
-*/
 
+/*
+// MY NEW SOLUTION
 var buttonCalculatePrice = document.querySelector(".price");
 var total = 0;
 
@@ -182,7 +182,10 @@ buttonCalculatePrice.onclick = function calculatePrice() {
       total = total + price;
     }
   }
+  var total = document.querySelector("#total");
+  total.innerHTML = total;
   console.log(total);
 };
 
 calculatePrice();
+*/
