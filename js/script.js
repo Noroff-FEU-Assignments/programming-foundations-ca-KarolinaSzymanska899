@@ -136,40 +136,6 @@ var toys = [
   },
 ];
 
-/*
-PATTERN
-
-const array = [1, 2, 3, 4];
-let sum = 0;
-
-for (let i = 0; i < array.length; i++) {
-    sum += array[i];
-}
-console.log(sum);
-*/
-
-// MY OLD SOLUTION
-var buttonCalculatePrice = document.querySelector(".price");
-var price = pardeFloat(toys[i].price);
-
-buttonCalculatePrice.onclick = function calculatePrice() {
-  var theTotal = 0;
-
-  for (var i = 0; i < toys.length; i++) {
-    if (isNaN(price)) {
-      continue;
-    } else {
-      theTotal = theTotal + price;
-    }
-    calculatePrice();
-  }
-
-  var total = document.querySelector("#total");
-  total.innerHTML = theTotal;
-};
-
-/*
-// MY NEW SOLUTION
 var buttonCalculatePrice = document.querySelector(".price");
 var total = 0;
 
@@ -186,6 +152,3 @@ buttonCalculatePrice.onclick = function calculatePrice() {
   total.innerHTML = total;
   console.log(total);
 };
-
-calculatePrice();
-*/
