@@ -173,7 +173,7 @@ buttonCalculatePrice.onclick = function calculatePrice() {
 function subtraction(number1, number2) {
   const convertedNumber1 = parseFloat(number1);
   const convertedNumber2 = parseFloat(number2);
-  const subtractionContainer = document.querySelector("#subtraction");
+  const subtractionContainer = document.querySelector(".subtraction");
 
   if (isNaN(convertedNumber1) || isNaN(convertedNumber2)) {
     subtractionContainer.innerHTML += "Invalid argument(s)";
@@ -185,7 +185,7 @@ function subtraction(number1, number2) {
   }
 }
 
-subtraction(100, "100");
+subtraction(100, 40);
 
 // question 6
 // Select the button with the class page.
