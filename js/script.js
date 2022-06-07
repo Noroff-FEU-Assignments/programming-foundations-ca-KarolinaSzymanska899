@@ -1,3 +1,4 @@
+/*
 // question 1
 // You are creating an ecommerce application selling products online.
 // Some of the products are no longer in stock, and the user must be made aware of this.
@@ -32,12 +33,11 @@ for (var i = 15; i <= 25; i++) {
 // containing the title and rating of each game only if the rating for the game is below 3.5.
 // If a game is unrated, exclude it from the list.
 
-/* The ul element should look similar to this after your code executes:
+The ul element should look similar to this after your code executes:
 <ul>
  <li>Name of game: rating</li>
  <li>Name of game: rating</li>
 </ul>
-*/
 
 var games = [
   {
@@ -85,8 +85,22 @@ function showGames(games) {
 
 showGames(games);
 
-/*
 // question 4
+// Create a function called whatIDontLike that accepts one argument.
+// Choose a good name for the argument.
+// Inside the function, check if the argument has a string value.
+// If it doesn't log the message "Please send in a string".
+// If the argument is a string value, log the message:
+// "I don't like " together with the argument.
+// Call the function and pass in a value of your choice.
+// Example:
+// If you pass in the value "giraffes", the function should log: "I don't like giraffes".
+
+// Test your function by calling it with a value of each of these types:
+// String
+// Number
+// Boolean
+// Null
 
 function whatIDontLike(dislikedThing) {
   var typeOfDislikedThing = typeof dislikedThing;
@@ -102,6 +116,7 @@ whatIDontLike("brussels sprout");
 whatIDontLike(25);
 whatIDontLike(true);
 whatIDontLike(null);
+*/
 
 // question 5
 
@@ -112,10 +127,6 @@ function subtraction(number1, number2) {
 
   if (isNaN(convertedNumber1) || isNaN(convertedNumber2)) {
     subtractionContainer.innerHTML += "Invalid argument(s)";
-<<<<<<< HEAD
-=======
-    console.log("Invalid argument(s)");
->>>>>>> 0f509d2eab18541eb23e90edbc69d7031f4d2688
   } else {
     const result = convertedNumber1 - convertedNumber2;
     subtractionContainer.innerHTML = result;
@@ -123,12 +134,9 @@ function subtraction(number1, number2) {
   }
 }
 
-<<<<<<< HEAD
 subtraction(100, "90");
-=======
-subtraction(100, "100");
->>>>>>> 0f509d2eab18541eb23e90edbc69d7031f4d2688
 
+/*
 // question 6
 
 var buttonPage = document.querySelector(".page");
@@ -204,9 +212,5 @@ buttonCalculatePrice.onclick = function calculatePrice() {
   }
   var total = document.querySelector("#total");
   total.innerHTML = theTotal;
-<<<<<<< HEAD
 };
 */
-=======
-}; */
->>>>>>> 0f509d2eab18541eb23e90edbc69d7031f4d2688
