@@ -75,24 +75,21 @@ whatIDontLike(null);
 // question 5
 
 function subtraction(number1, number2) {
-  var convertedNumber1 = parseFloat(number1);
-  var convertedNumber2 = parseFloat(number2);
+  const convertedNumber1 = parseFloat(number1);
+  const convertedNumber2 = parseFloat(number2);
+  const subtractionContainer = document.querySelector("#subtraction");
 
-  var result = 0;
-  var container = document.querySelector("#subtraction");
-  container.innerHTML = "";
-
-  if (
-    typeof convertedNumber1 !== "number" ||
-    typeof convertedNumber2 !== "number"
-  ) {
-    return "Invalid argument(s)";
+  if (isNaN(convertedNumber1) || isNaN(convertedNumber2)) {
+    subtractionContainer.innerHTML += "Invalid argument(s)";
+    console.log("Invalid argument(s)");
   } else {
-    result = convertedNumber1 - convertedNumber2;
-    container.innerHTML = result;
+    const result = convertedNumber1 - convertedNumber2;
+    subtractionContainer.innerHTML = result;
     return result;
   }
 }
+
+subtraction(100, "100");
 
 // question 6
 
