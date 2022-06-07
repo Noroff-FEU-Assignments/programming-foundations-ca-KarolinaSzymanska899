@@ -87,6 +87,10 @@ function subtraction(number1, number2) {
 
   if (isNaN(convertedNumber1) || isNaN(convertedNumber2)) {
     subtractionContainer.innerHTML += "Invalid argument(s)";
+<<<<<<< HEAD
+=======
+    console.log("Invalid argument(s)");
+>>>>>>> 0f509d2eab18541eb23e90edbc69d7031f4d2688
   } else {
     const result = convertedNumber1 - convertedNumber2;
     subtractionContainer.innerHTML = result;
@@ -94,7 +98,11 @@ function subtraction(number1, number2) {
   }
 }
 
+<<<<<<< HEAD
 subtraction(100, "90");
+=======
+subtraction(100, "100");
+>>>>>>> 0f509d2eab18541eb23e90edbc69d7031f4d2688
 
 // question 6
 
@@ -135,7 +143,29 @@ var toys = [
   },
 ];
 
-var buttonCalculatePrice = document.querySelector(".price");
+// corrected the function on my own
+
+const buttonCalculatePrice = document.querySelector(".price");
+const totalContainer = document.querySelector("#total");
+
+buttonCalculatePrice.onclick = function calculatePrice() {
+  let total = 0;
+
+  for (let i = 0; i < toys.length; i++) {
+    const price = toys[i].price;
+    const convertedPrice = parseFloat(price);
+
+    if (isNaN(convertedPrice)) {
+      continue;
+    } else {
+      total += convertedPrice;
+      totalContainer.innerHTML = total;
+      console.log(total);
+    }
+  }
+};
+
+/* var buttonCalculatePrice = document.querySelector(".price");
 
 buttonCalculatePrice.onclick = function calculatePrice() {
   var theTotal = 0;
@@ -149,5 +179,9 @@ buttonCalculatePrice.onclick = function calculatePrice() {
   }
   var total = document.querySelector("#total");
   total.innerHTML = theTotal;
+<<<<<<< HEAD
 };
 */
+=======
+}; */
+>>>>>>> 0f509d2eab18541eb23e90edbc69d7031f4d2688
