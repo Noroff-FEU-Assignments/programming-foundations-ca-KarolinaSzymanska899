@@ -148,7 +148,6 @@ function subtraction(number1, number2) {
 }
 
 subtraction(100, "100");
-*/
 
 // question 6
 // Select the button with the class page.
@@ -177,9 +176,12 @@ buttonPage.onclick = function pageStyleUpdate() {
   list.style.listStyleType = "none";
   list.style.padding = "0";
 };
+*/
 
-/*
 // question 7
+// Select the button with the class price.
+// When the button is clicked, loop through the array below, add all the prices
+// and assign the total to be the innerHTML value of the element with the id total:
 
 var toys = [
   {
@@ -200,8 +202,6 @@ var toys = [
   },
 ];
 
-// corrected the function on my own
-
 const buttonCalculatePrice = document.querySelector(".price");
 const totalContainer = document.querySelector("#total");
 
@@ -217,7 +217,6 @@ buttonCalculatePrice.onclick = function calculatePrice() {
     } else {
       total += convertedPrice;
       totalContainer.innerHTML = total;
-      console.log(total);
     }
   }
 };
