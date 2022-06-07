@@ -24,8 +24,20 @@ for (var i = 15; i <= 25; i++) {
   }
 }
 
-/*
 // question 3
+// You are creating an online game comparison website.
+// When provided with a list of games, these should be displayed to the user.
+
+// Loop through the array below and add an li item to the ul element in the HTML
+// containing the title and rating of each game only if the rating for the game is below 3.5.
+// If a game is unrated, exclude it from the list.
+
+/* The ul element should look similar to this after your code executes:
+<ul>
+ <li>Name of game: rating</li>
+ <li>Name of game: rating</li>
+</ul>
+*/
 
 var games = [
   {
@@ -50,20 +62,30 @@ var games = [
   },
 ];
 
+console.log(games);
+
 function showGames(games) {
-  var gameContainer = document.querySelector("ul");
-  gameContainer.innerHTML = "";
+  const gamesContainer = document.querySelector("ul");
+  gamesContainer.innerHTML = "";
 
-  for (var i = 0; i < games.length; i++) {
-    var rating = games[i].rating;
-    var title = games[i].title;
+  for (let i = 0; i < games.length; i++) {
+    const rating = games[i].rating;
+    const title = games[i].title;
 
+    // If rating is missing then there is no point doing the rest of the code
+    // that's why you need to check for it first:
+    if (rating === null) {
+      continue;
+    }
     if (rating < 3.5) {
-      gameContainer.innerHTML += "<li>" + title + ": " + rating + "</li>";
+      gamesContainer.innerHTML += `<li> <h2>${title}: ${rating}</h2></li>`;
     }
   }
 }
 
+showGames(games);
+
+/*
 // question 4
 
 function whatIDontLike(dislikedThing) {
