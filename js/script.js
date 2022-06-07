@@ -1,6 +1,11 @@
 // question 1
+// You are creating an ecommerce application selling products online.
+// Some of the products are no longer in stock, and the user must be made aware of this.
+// Create a variable called outOfStock and assign it a boolean value.
+// Create an if else statement that checks the value of outOfStock.
+// If it is true, console log "Out of stock". Otherwise log "In stock".
 
-var outOfStock = false;
+const outOfStock = false;
 
 if (outOfStock) {
   console.log("Out of stock");
@@ -8,6 +13,7 @@ if (outOfStock) {
   console.log("In stock");
 }
 
+/*
 // question 2
 
 for (var i = 15; i <= 25; i++) {
@@ -75,24 +81,20 @@ whatIDontLike(null);
 // question 5
 
 function subtraction(number1, number2) {
-  var convertedNumber1 = parseFloat(number1);
-  var convertedNumber2 = parseFloat(number2);
+  const convertedNumber1 = parseFloat(number1);
+  const convertedNumber2 = parseFloat(number2);
+  const subtractionContainer = document.querySelector("#subtraction");
 
-  var result = 0;
-  var container = document.querySelector("#subtraction");
-  container.innerHTML = "";
-
-  if (
-    typeof convertedNumber1 !== "number" ||
-    typeof convertedNumber2 !== "number"
-  ) {
-    return "Invalid argument(s)";
+  if (isNaN(convertedNumber1) || isNaN(convertedNumber2)) {
+    subtractionContainer.innerHTML += "Invalid argument(s)";
   } else {
-    result = convertedNumber1 - convertedNumber2;
-    container.innerHTML = result;
+    const result = convertedNumber1 - convertedNumber2;
+    subtractionContainer.innerHTML = result;
     return result;
   }
 }
+
+subtraction(100, "90");
 
 // question 6
 
@@ -148,3 +150,4 @@ buttonCalculatePrice.onclick = function calculatePrice() {
   var total = document.querySelector("#total");
   total.innerHTML = theTotal;
 };
+*/
