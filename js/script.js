@@ -202,6 +202,8 @@ var toys = [
   },
 ];
 
+console.log(toys);
+
 const buttonCalculatePrice = document.querySelector(".price");
 const totalContainer = document.querySelector("#total");
 
@@ -220,20 +222,3 @@ buttonCalculatePrice.onclick = function calculatePrice() {
     }
   }
 };
-
-/* var buttonCalculatePrice = document.querySelector(".price");
-
-buttonCalculatePrice.onclick = function calculatePrice() {
-  var theTotal = 0;
-  for (var i = 0; i < toys.length; i++) {
-    var price = parseFloat(toys[i].price);
-    if (isNaN(price)) {
-      continue;
-    } else {
-      theTotal += price;
-    }
-  }
-  var total = document.querySelector("#total");
-  total.innerHTML = theTotal;
-};
-*/
