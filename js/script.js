@@ -133,7 +133,29 @@ var toys = [
   },
 ];
 
-var buttonCalculatePrice = document.querySelector(".price");
+// corrected the function on my own
+
+const buttonCalculatePrice = document.querySelector(".price");
+const totalContainer = document.querySelector("#total");
+
+buttonCalculatePrice.onclick = function calculatePrice() {
+  let total = 0;
+
+  for (let i = 0; i < toys.length; i++) {
+    const price = toys[i].price;
+    const convertedPrice = parseFloat(price);
+
+    if (isNaN(convertedPrice)) {
+      continue;
+    } else {
+      total += convertedPrice;
+      totalContainer.innerHTML = total;
+      console.log(total);
+    }
+  }
+};
+
+/* var buttonCalculatePrice = document.querySelector(".price");
 
 buttonCalculatePrice.onclick = function calculatePrice() {
   var theTotal = 0;
@@ -147,4 +169,4 @@ buttonCalculatePrice.onclick = function calculatePrice() {
   }
   var total = document.querySelector("#total");
   total.innerHTML = theTotal;
-};
+}; */
