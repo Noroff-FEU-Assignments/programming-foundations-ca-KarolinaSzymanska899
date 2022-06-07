@@ -220,5 +220,13 @@ buttonCalculatePrice.onclick = function calculatePrice() {
       total += convertedPrice;
       totalContainer.innerHTML = total;
     }
+
+    /* Martin's if else reduced statement:
+
+    if (!isNaN(convertedPrice)) {
+      total += convertedPrice;
+      totalContainer.innerHTML = total;
+    }
+    */
   }
 };
