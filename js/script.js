@@ -1,4 +1,3 @@
-/*
 // question 1
 // You are creating an ecommerce application selling products online.
 // Some of the products are no longer in stock, and the user must be made aware of this.
@@ -33,11 +32,13 @@ for (var i = 15; i <= 25; i++) {
 // containing the title and rating of each game only if the rating for the game is below 3.5.
 // If a game is unrated, exclude it from the list.
 
+/*
 The ul element should look similar to this after your code executes:
 <ul>
  <li>Name of game: rating</li>
  <li>Name of game: rating</li>
 </ul>
+*/
 
 var games = [
   {
@@ -176,7 +177,6 @@ buttonPage.onclick = function pageStyleUpdate() {
   list.style.listStyleType = "none";
   list.style.padding = "0";
 };
-*/
 
 // question 7
 // Select the button with the class price.
